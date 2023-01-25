@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>Dota 2 Heros</title>
+		<link href="hero.css" rel="stylesheet" type="text/css" />
+		<link href="img/download.png" rel="icon" type="image/jpg" sizes="16x16" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+		<style type="text/css">
+		@import url('https://fonts.googleapis.comcss2?family=Recursive:wght@300;400&display=swap');
+
+	*{
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+	}
+	body{
+		width: 100%;
+		height: 140vh;
+
+		font-family: 'Recursive', sans-serif;
+
+		text-transform: uppercase;
+		background: linear-gradient(to right, #928DAB, #1F1C2C);
+
+	}
+	nav{
+		width: 100%;
+		height: 60px;
+		background-color: rgba(28, 27, 27,0.6);
+		position: sticky;
+		top: 0;
+		left: 0;
+
+		display: flex;
+		justify-content: space-evenly;
+		align-items: center;
+	}
+	nav .image{
+		width: 80px;
+		height: 100%;
+
+		text-align: center;
+		padding-top: 5px;
+	}
+	nav img{
+		width: 50px;
+		height: 50px;
+
+		margin-right: 10px;
+	}
+	nav img:hover{
+		cursor: pointer;
+	}
+	.heading h2{
+		/*width: 100px;
+		height: 100%;*/
+
+		color: #fff;
+		margin-right: 50px;
+		letter-spacing: 1px;
+	}
+	.heading h2 a{
+		font-size: 1.3rem;
+
+		color: #fff;
+		text-decoration: none;
+
+		color: #fff;
+		letter-spacing: 1px;
+
+	}
+	.heading h2 a:hover{
+		color: #f24162;
+		cursor: pointer;
+
+		padding: 5px 20px;
+		background-color: #f7f9fc;
+		border-radius: 30px;
+	}
+	.heading ul{
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+
+		width: 600px;
+		height: 100%;
+		margin-right: 50px;
+	}
+	.heading ul li{
+		list-style-type: none;
+	}
+	.heading ul li a{
+		letter-spacing: 1px;
+		text-decoration: none;
+		color: #fff;
+
+		font-size: 1.4rem;
+	}
+	.heading ul li a:hover{
+		color: #f24162;
+		cursor: pointer;
+
+		padding: 5px 30px;
+		background-color: #f7f9fc;
+		border-radius: 30px;
+	}
+	.heading h3 a{
+		font-size: 1.3rem;
+
+		color: #fff;
+		text-decoration: none;
+
+		color: #fff;
+		letter-spacing: 1px;
+	}
+	.heading h3 a:hover{
+		color: #f24162;
+		cursor: pointer;
+
+		padding: 5px 20px;
+		background-color: #f7f9fc;
+		border-radius: 30px;
+	}
+	.heading .play{
+		width: 250px;
+		height: 50px;
+
+		border: 2px solid #f24162;
+		text-align: center;
+		padding-top: 7px;
+	}
+	.heading .play a{
+		letter-spacing: 1px;
+		font-size: 1.5rem;
+
+		color: #fff;
+		text-decoration: none;
+	}
+	.heading a:hover{
+		color: #f24162;
+		cursor: pointer;
+
+		/*padding: 5px 20px;
+		background-color: #f7f9fc;
+		border-radius: 30px;*/
+	}
+	body h1{
+		text-align: center;
+		text-transform: uppercase;
+		color: #fff;
+		margin-top: 40px;
+	}
+	body .from{
+		width: 1000px;
+		height: 80px;
+		
+		color: #fff;
+		text-align: center;
+		margin-top: 20px;
+		margin-left: 200px;
+		color: #c0ccca;
+		line-height: 1.5;
+	}
+	.box{
+		width: 1200px;
+		height: 80px;
+
+		background-color: rgba(56, 58, 61,0.6);
+
+		margin: 30px 0px 0px 60px;
+		border: 2px solid rgb(56, 58, 61);
+
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+	}
+	.box h2 a{
+		color: #fff;
+		text-decoration: none;
+	}
+	.attribute{
+		display: flex;
+	}
+	.attribute h2{
+		margin-top: 7px;
+		color: #fff;
+	}
+	.attribute i{
+		padding: 10px 10px;
+		background-color: #c9c2c1;
+		margin: 0px 5px;
+		border-radius: 50%;
+		font-size: 1.2rem;
+		color: rgba(56, 58, 61,0.6);
+	}
+	.complexity{
+		display: flex;
+	}
+	.complexity h2{
+		margin-top: 7px;
+		color: #fff;
+	}
+	.complexity i{
+		font-size: 1.2rem;
+		color: rgba(56, 58, 61,0.6);
+		padding: 10px 10px;
+		background-color: #c9c2c1;
+		margin: 0px 5px;
+		border-radius: 50%;
+	}
+	.input{
+		padding: 5px 20px;
+		border: 2px solid #1b1b1b;
+		background-color: #000;
+	}
+	.input i{
+		color: rgb(56, 58, 61);
+		font-size: 1.5rem;
+		margin-right: 10px;
+	}
+	.input .text1{
+		height: 45px;
+		width: 200px;
+		background-color: rgba(56, 58, 61,0.6);
+	}
+	.image{
+		display: flex;
+		justify-content: center;
+
+		margin: 20px 0px;
+	}
+	.image img{
+		margin: 0px 5px;
+
+		box-shadow: 1px 1px 3px 1px #000;
+	}
+	.image img:hover{
+		cursor: pointer;
+		opacity: 0.6;
+		transform: translateY(-5px);
+		transition: all 0.6s;
+	}
+	.title i{
+		color: red;
+		margin-right: 10px;
+	}
+	.title h3{
+		position: absolute;
+	}
+	.title .t1{
+		top: 74vh;
+		left: 2.5%;
+	}
+	.title .t2{
+		top: 74vh;
+		left: 22%;
+	}
+	.title .t3{
+		top: 74vh;
+		left: 41.5%;
+	}
+	.title .t4{
+		top: 74vh;
+		left: 61.5%;
+	}
+	.title .t5{
+		top: 74vh;
+		left: 81.5%;
+	}
+	</style>
+	</head>
+
+	<body>
+		<div class="heading">
+		<nav>
+			<div class="image">
+				<img src="img/download.png" alt="logo" />
+			</div>
+			<div>
+				<h2><a href="dota2.html">dota 2</a></h2>
+			</div>
+			<ul>
+				<li><a href="game.html">Game</a></li>
+				<li><a href="hero.html">Heroes</a></li>
+				<li><a href="new.html">news</a></li>
+				<li><a href="esport.html">esports</a></li>
+			</ul>
+			<div>
+				<h3><a href="signin.html">Log In</a></h3>
+			</div>
+			<div class="play">
+				<a href="https://store.steampowered.com/app/570/Dota_2/">Play for free</a>
+			</div>
+		</nav>
+	</div>
+
+	<h1>Choose your hero</h1>
+	<h3 class="from">From magical tacticians to fierce brutes and cunning rogues, Dota 2's hero pool is massive and limitlessly diverse. Unleash incredible abilities and devastating ultimates on your way to victory.
+	</h3>
+	<div class="box">
+		<h2><a href="hero.html">Filter heros</a></h2>
+		<div class="attribute">
+			<h2>attribute</h2>
+			<a href="hand.html"><i class="fa-solid fa-hand-fist"></i></a>
+			<a href="hand1.html"><i class="fa-solid fa-volleyball"></i></a>
+			<a href="hand2.html"><i class="fa-solid fa-sun"></i></a>
+		</div>
+		<div class="complexity">
+			<h2>complexity</h2>
+			<a href="hand3.html"><i class="fa-solid fa-diamond"></i></a>
+			<a href="hand4.html"><i class="fa-solid fa-diamond"></i></a>
+			<a href="hand5.html"><i class="fa-solid fa-diamond"></i></a>
+		</div>
+		<div class="input">
+			<i class="fa-solid fa-magnifying-glass"></i>
+			<input type="text" name="text1" class="text1" id="text1"/>
+		</div>
+	</div>
+	<div class="image">
+		<img src="img/anti.jpg" alt="abaddon"/>
+		<img src="img/arc.jpg" alt="alchemist"/>
+		<img src="img/blood.jpg" alt="anc"/>
+		<img src="img/bounty.jpg" alt="anti"/>
+		<img src="img/clinkz.jpg" alt="arc"/>
+	</div>
+	<div class="title">
+		<h3 class="t1"><i class="fa-solid fa-volleyball"></i>ANTI-MAGE</h3>
+		<h3 class="t2"><i class="fa-solid fa-volleyball"></i>ARC WARDEN</h3>
+		<h3 class="t3"><i class="fa-solid fa-volleyball"></i>BLOODSEEKER</h3>
+		<h3 class="t4"><i class="fa-solid fa-volleyball"></i>BOUNTY HUNTER</h3>
+		<h3 class="t5"><i class="fa-solid fa-volleyball"></i>CLINKZ</h3>
+	</div>
+	</body>
+</html>
